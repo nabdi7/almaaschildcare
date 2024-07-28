@@ -5,14 +5,14 @@ const Footer = () => {
     { href: '/about', name: 'About' },
     { href: '/programs', name: 'Programs' },
     { href: '/', name: 'Contact' },
-    { href: '#', name: 'About us' }
+    { href: '/', name: 'About us' }
   ];
 
   return (
     <footer className="pt-10">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="space-y-6 sm:max-w-md sm:mx-auto sm:text-center">
-          <img src="/almaas.png" className="w-32 sm:mx-auto" alt="Float UI Logo" />
+          <img src="/almaas.png" className="w-32 sm:mx-auto" alt="Almaas Logo" />
           <p>
           25921 161st CT SE Covington, WA 98042 United States
           </p>
