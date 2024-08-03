@@ -19,6 +19,17 @@
 
 
 @layer utilities {
+  .btn-primary {
+    @apply px-6 py-2.5 text-sm font-medium leading-5 text-center text-white capitalize bg-[#df0059ff] rounded-lg hover:bg-[#1d80e3ff] lg:mx-0 lg:w-auto focus:outline-none
+  }
+  .btn-secondary {
+    @apply bg-red-500 text-white px-6 py-3 inline-block rounded-full font-semibold hover:bg-red-600 transition duration-300;
+  }
+
+  .btn-circle {
+    @apply px-6 py-2.5 inline-block text-gray-800 font-medium bg-white duration-150 hover:bg-gray-100 active:bg-gray-200 rounded-full
+  }
+
   .text-balance {
     text-wrap: balance;
   }
