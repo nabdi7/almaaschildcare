@@ -3,13 +3,11 @@ import React from "react";
 const Testimonial = () => {
   return (
     <section>
-      <div className="overflow-hidden bg-gray-800 ">
+      <div className="overflow-hidden bg-gray-800 py-14">
         <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
-          <div className="max-w-2xl w-3/4 lg:w-1/2 mb-6 sm:mb-10 md:mb-16">
-            <h2 className="text-2xl sm:text-3xl lg:text-4xl text-white font-semibold">
-              Loved by business and individuals across the globe
-            </h2>
-          </div>
+          <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-10 sm:mb-10 md:mb-16">
+            Loved by business and individuals across the globe
+          </h2>
 
           <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
             <div className="flex h-auto">

@@ -72,32 +72,25 @@ export function Menu() {
         <div className="absolute left-0 w-full flex flex-col mt-2  bg-white border border-gray-200 rounded-lg shadow-lg z-10">
           <div className="flex flex-col p-2">
             <Link
-              href="/"
+              href="/about"
               className="text-gray-800 hover:text-primary py-2"
               onClick={toggleMenu}
             >
               About
             </Link>
             <Link
-              href="/projects"
+              href="/programs"
               className="text-gray-800 hover:text-primary py-2"
               onClick={toggleMenu}
             >
-              Projects
+              Programs
             </Link>
             <Link
-              href="/research"
+              href="/contact"
               className="text-gray-800 hover:text-primary py-2"
               onClick={toggleMenu}
             >
-              Research
-            </Link>
-            <Link
-              href="/blog"
-              className="text-gray-800 hover:text-primary py-2"
-              onClick={toggleMenu}
-            >
-              Blogs
+              Contact
             </Link>
           </div>
         </div>

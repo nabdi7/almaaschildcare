@@ -1,7 +1,7 @@
 import Hero from "@/components/hero/Hero";
 import About from "@/components/about/About";
-import { Gallery } from "@/components/gallery/Gallery";
 import Programs from "@/components/programs/Programs";
+import { Gallery } from "@/components/gallery/Gallery";
 import Testimonial from "@/components/testimonials/Testimonial";
 
 export default function Home() {
@@ -9,8 +9,8 @@ export default function Home() {
     <main className="">
       <Hero />
       <About />
-      <Gallery />
       <Programs />
+      <Gallery />
       <Testimonial />
     </main>
   );

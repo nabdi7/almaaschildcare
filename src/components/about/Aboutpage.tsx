@@ -3,6 +3,19 @@ import React from "react";
 const Aboutpage = () => {
   return (
     <section>
+      <div
+        className="py-14 lg:py-16 text-center"
+        style={{
+          backgroundImage: `url('/image1.jpeg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <h2 className="text-3xl font-semibold text-gray-800 sm:text-3xl mb-10">
+          About Us
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
+        </h2>
+      </div>
       <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <div className="max-w-2xl mx-auto">
           <div className="grid gap-12">

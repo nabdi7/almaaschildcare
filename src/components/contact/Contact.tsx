@@ -2,11 +2,22 @@ import React from "react";
 
 const Contact = () => {
   return (
+    <>
+    <div
+        className="py-14 lg:py-16 text-center"
+        style={{
+          backgroundImage: `url('/image1.jpeg')`,
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+        }}
+      >
+        <h2 className="text-3xl font-semibold text-gray-800 sm:text-3xl mb-10">
+        Contact Us
+          <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
+        </h2>
+      </div>
     <section className="px-8 py-8 lg:py-16">
       <div className="container mx-auto text-center">
-        <h5 className="mb-4 text-base lg:text-2xl font-bold text-blue-gray-700">
-          Contact Us
-        </h5>
         <h1 className="mb-4 text-3xl lg:text-5xl font-bold text-blue-gray-700">
           Were Here to Help
         </h1>
@@ -218,6 +229,7 @@ const Contact = () => {
         ></iframe>
       </div>
     </section>
+    </>
   );
 };
 
