@@ -10,7 +10,7 @@ const WhyChoose = () => {
         <h2 className="text-3xl sm:text-4xl font-bold text-center text-gray-700 mb-10 sm:mb-10 md:mb-16">
           Why Choose Almaas Family Childcare for Your Little One
         </h2>
-        <div className="grid grid-cols-3 md:grid-cols-3 gap-8">
+        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
             <img
               src="/image1.jpeg"
