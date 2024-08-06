@@ -87,9 +87,10 @@ const Testimonial = () => {
               <div className="flex flex-col bg-white rounded-xl dark:bg-neutral-900">
                 <div className="flex-auto p-4 md:p-6">
                   <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
-                    Refreshing and Thought provoking design and it changes my
-                    view about how I design the websites. Great typography,
-                    modern clean white design, nice tones of the color.
+                    We couldn&apos;t be happier with the care our two children
+                    receive at Almaas Family Childcare. The staff is incredibly
+                    nurturing, and our kids love the daily activities and
+                    educational programs. Highly recommend!
                   </p>
                 </div>
 
@@ -98,14 +99,14 @@ const Testimonial = () => {
                     <div className="shrink-0">
                       <img
                         className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
-                        src="https://images.unsplash.com/photo-1579017331263-ef82f0bbc748?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=facearea&facepad=2&w=900&h=900&q=80"
+                        src="https://lh3.googleusercontent.com/a/ACg8ocJ_rumFgpj27GeSZWAWwr_phtJGVP2VteZ9eKO7cVWjInQY0g=w60-h60-p-rp-mo-br100"
                         alt="Avatar"
                       />
                     </div>
 
                     <div className="grow">
                       <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
-                        Alisa Williams
+                        Betriya Betriya
                       </p>
                       <a
                         className="text-xs text-gray-500 dark:text-neutral-400"
