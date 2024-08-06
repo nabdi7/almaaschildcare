@@ -33,7 +33,7 @@ const Aboutpage = () => {
         </p>
 
         <div className="flex flex-col md:flex-row gap-8">
-          <div className="bg-gray-800 text-white rounded-lg p-8 md:w-1/2 flex flex-col justify-center items-center text-center">
+          <div className="bg-gray-800 text-white rounded-lg p-8 md:w-1/2 h-[26rem] flex flex-col justify-center items-center text-center">
             <h3 className="text-2xl font-bold mb-4">Our Mission</h3>
             <p className="max-w-md">
               Our mission is to provide high-quality, affordable childcare
