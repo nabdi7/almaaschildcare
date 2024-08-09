@@ -4,20 +4,20 @@ const Contact = () => {
   return (
     <>
       <div
-        className="py-14 lg:py-16 text-center"
+        className="py-14 lg:py-16 text-center bg-gray-800"
         style={{
-          backgroundImage: `url('/image1.jpeg')`,
+          // backgroundImage: `url('/image1.jpeg')`,
           backgroundSize: "cover",
           backgroundPosition: "center",
         }}
       >
-        <h2 className="text-3xl font-semibold text-gray-800 sm:text-3xl mb-10">
+        <h2 className="text-3xl font-semibold text-white sm:text-3xl mb-10">
           Contact Us
-          <div className="w-20 h-1 bg-blue-600 mx-auto mb-5 mt-2"></div>
+          <div className="w-20 h-1 bg-white mx-auto mb-5 mt-2"></div>
         </h2>
       </div>
-      <section className="px-8 py-8 lg:py-16">
-        <div className="max-w-6xl  mx-auto ">
+      <section className="px-6 py-8 lg:py-16 ">
+        <div className="max-w-6xl  mx-auto  ">
           <h1 className="mb-4 text-3xl lg:text-5xl font-bold text-blue-gray-700 text-center">
             Were Here to Help
           </h1>
@@ -25,7 +25,7 @@ const Contact = () => {
             Whether its a question about our services, a request for a tour,
             please get in touch with us.
           </p>
-          <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">
+          <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start ">
             <div className="grid w-full h-full lg:max-h-[510px]">
               <div className="flex gap-x-7 py-6">
                 <svg
@@ -47,7 +47,7 @@ const Contact = () => {
                 <div className="grow">
                   <h3 className="font-semibold text-gray-800 ">Address</h3>
                   <p className="mt-1 text-sm text-gray-500 ">
-                    25921 161st CT SE Covington, WA 98042 United States
+                    25921 161st CT SE Covington, WA 98042 US
                   </p>
                   <a
                     className="mt-2 inline-flex items-center gap-x-2 text-sm font-medium text-gray-600 hover:text-gray-800 focus:outline-none focus:text-gray-800"
@@ -164,7 +164,7 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form action="#" className="flex flex-col gap-4 lg:max-w-sm">
+            <form action="#" className="flex flex-col gap-4 lg:max-w-lg ">
               <div className="">
                 <div>
                   <p className="mb-2 text-left font-medium text-gray-900">
@@ -220,7 +220,7 @@ const Contact = () => {
             </form>
           </div>
         </div>
-        <div className="max-w-6xl mx-auto mt-20 mb-20">
+        <div className="max-w-[85rem] py-10 lg:py-14 mx-auto mt-20 mb-10">
           <iframe
             title="map"
             className="w-full h-96 rounded-lg"

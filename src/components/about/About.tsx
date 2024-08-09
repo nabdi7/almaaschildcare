@@ -27,15 +27,15 @@ const About = () => {
               and enriching experience for every child.
             </p>
             <p className="text-gray-600 mb-8">
-              Contact us today at (206)934-9581 to schedule a tour of our
-              facility and learn more about how we can support your child&apos;s
-              development and well-being.
+              Contact us today at{" "}
+              <a href="tel:+12069349581" className="font-bold text-teal-800">
+                (206) 934-9581
+              </a>{" "}
+              to schedule a tour of our facility and learn more about how we can
+              support your child&apos;s development and well-being.
             </p>
             <div className="flex items-center">
-              <Link
-                href="/about"
-                className="btn-secondary"
-              >
+              <Link href="/about" className="btn-secondary">
                 Read More
               </Link>
             </div>
@@ -45,7 +45,7 @@ const About = () => {
           <div className="lg:block lg:max-w-xl lg:mt-0 mt-6 flex  w-full h-96 lg:w-full">
             <Image
               src="/image1.jpeg"
-              className="object-cover md:w-full md:h-full md:max-w-3xl rounded-md"
+              className="object-cover md:w-full md:h-full md:max-w-3xl rounded-lg"
               alt="about-image"
               width={500}
               height={500}

@@ -2,7 +2,15 @@ import React from "react";
 
 const WhyChoose = () => {
   return (
-    <section className="py-12 px-4 bg-white text-center">
+    <section className="py-14 lg:py-20 px-4 sm:px-6 lg:px-8 bg-white text-center relative">
+      {/* Background image */}
+      <div
+        className="absolute inset-0 bg-cover z-0"
+        style={{
+          backgroundImage: "url('/about-bg.png')",
+          opacity: 0.4,
+        }}
+      ></div>
       <div className="relative max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
         <h3 className="text-sm font-medium text-gray-500 uppercase tracking-wide mb-4">
           Giving Your Child the Best Start in Life
