@@ -1,7 +1,9 @@
+"use client";
 import React from "react";
 import { testimonials } from "./index";
 import { Testimonials } from "../types/Testimonial";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const Testimonial: React.FC = () => {
   return (
@@ -11,48 +13,65 @@ const Testimonial: React.FC = () => {
           <h2 className="text-3xl sm:text-4xl font-bold text-center text-white mb-10 sm:mb-10 md:mb-16">
             See what parents say about us
           </h2>
+          <motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                y: -20,
+              },
 
-          <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((testimonial: Testimonials, index: number) => (
-              <div key={index} className="flex h-auto">
-                <div className="flex flex-col bg-white rounded-xl dark:bg-neutral-900">
-                  <div className="flex-auto p-4 md:p-6">
-                    <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
-                      {testimonial.quote}
-                    </p>
-                  </div>
+              visible: {
+                opacity: 1,
+                y: 0,
+              },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 1, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+              {testimonials.map((testimonial: Testimonials, index: number) => (
+                <div key={index} className="flex h-auto">
+                  <div className="flex flex-col bg-white rounded-xl dark:bg-neutral-900">
+                    <div className="flex-auto p-4 md:p-6">
+                      <p className="text-base italic md:text-lg text-gray-800 dark:text-neutral-200">
+                        {testimonial.quote}
+                      </p>
+                    </div>
 
-                  <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
-                    <div className="flex items-center gap-x-3">
-                      <div className="shrink-0">
-                        <Image
-                          className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
-                          src={testimonial.avatar}
-                          alt="Testimonial profile"
-                          width={500}
-                          height={500}
-                        />
-                      </div>
+                    <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
+                      <div className="flex items-center gap-x-3">
+                        <div className="shrink-0">
+                          <Image
+                            className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
+                            src={testimonial.avatar}
+                            alt="Testimonial profile"
+                            width={500}
+                            height={500}
+                          />
+                        </div>
 
-                      <div className="grow">
-                        <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
-                          {testimonial.name}
-                        </p>
-                        <a
-                          className="text-xs text-gray-500 dark:text-neutral-400"
-                          href={testimonial.reviewLink}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                        >
-                          See on google review
-                        </a>
+                        <div className="grow">
+                          <p className="text-sm sm:text-base font-semibold text-gray-800 dark:text-neutral-200">
+                            {testimonial.name}
+                          </p>
+                          <a
+                            className="text-xs text-gray-500 dark:text-neutral-400"
+                            href={testimonial.reviewLink}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                          >
+                            See on google review
+                          </a>
+                        </div>
                       </div>
                     </div>
                   </div>
                 </div>
-              </div>
-            ))}
-          </div>
+              ))}
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>

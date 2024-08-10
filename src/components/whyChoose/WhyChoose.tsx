@@ -1,5 +1,7 @@
+"use client";
 import React from "react";
 import Image from "next/image";
+import { motion } from "framer-motion";
 
 const WhyChoose = () => {
   return (
@@ -20,18 +22,36 @@ const WhyChoose = () => {
           Why Choose Almaas Family Childcare for Your Little One
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
-          <div className="flex flex-col items-center">
-            <Image
-              src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317248/image1_cdgx9e.jpg"
-              alt="Passionate and Qualified Educators"
-              className="rounded-lg mb-4 w-full h-48 object-cover"
-              width={500}
-              height={500}
-            />
-            <h3 className="text-lg font-medium">
-              Passionate and Qualified Staff
-            </h3>
-          </div>
+          <motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                x: -20,
+              },
+
+              visible: {
+                opacity: 1,
+                x: 0,
+              },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col items-center">
+              <Image
+                src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317248/image1_cdgx9e.jpg"
+                alt="Passionate and Qualified Educators"
+                className="rounded-lg mb-4 w-full h-48 object-cover"
+                width={500}
+                height={500}
+              />
+              <h3 className="text-lg font-medium">
+                Passionate and Qualified Staff
+              </h3>
+            </div>
+          </motion.div>
           <div className="flex flex-col items-center">
             <Image
               src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image2_qu6iec.jpg"
@@ -44,18 +64,36 @@ const WhyChoose = () => {
               Individualized Care Approaches
             </h3>
           </div>
-          <div className="flex flex-col items-center">
-            <Image
-              src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image3_jw5khk.jpg"
-              alt="Social and Emotional Development"
-              className="rounded-lg mb-4 w-full h-48 object-cover"
-              width={500}
-              height={500}
-            />
-            <h3 className="text-lg font-medium">
-              Social and Physical Development
-            </h3>
-          </div>
+          <motion.div
+            variants={{
+              hidden: {
+                opacity: 0,
+                x: 20,
+              },
+
+              visible: {
+                opacity: 1,
+                x: 0,
+              },
+            }}
+            initial="hidden"
+            whileInView="visible"
+            transition={{ duration: 0.5, delay: 0.1 }}
+            viewport={{ once: true }}
+          >
+            <div className="flex flex-col items-center">
+              <Image
+                src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image3_jw5khk.jpg"
+                alt="Social and Emotional Development"
+                className="rounded-lg mb-4 w-full h-48 object-cover"
+                width={500}
+                height={500}
+              />
+              <h3 className="text-lg font-medium">
+                Social and Physical Development
+              </h3>
+            </div>
+          </motion.div>
         </div>
       </div>
     </section>
