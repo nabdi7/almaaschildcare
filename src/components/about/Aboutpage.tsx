@@ -136,9 +136,9 @@ const Aboutpage = () => {
                   Hours of Operation
                 </h4>
                 <p className="text-gray-600">
-                  Monday - Friday: 5:00 am - 9:00 pm
+                  Monday - Friday: open <span className="text-blue-600">24hours </span>
                   <br />
-                  Saturday - Sunday: 5:00 am - 9:00 pm
+                  Saturday - Sunday: open <span className="text-blue-600">24hours </span>
                 </p>
               </div>
               {/* Application and Parent Handbook */}
