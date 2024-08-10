@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 export const Gallery = () => {
   return (
@@ -8,50 +9,62 @@ export const Gallery = () => {
         </h2>
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-2 pb-14">
         <div className="group block relative overflow-hidden rounded-lg">
-          <img
+          <Image
             className="w-full size-80 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-            src="image1.jpeg"
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317250/kid4_qpmdih.jpg"
             alt="Project"
+            width={500}
+            height={500}
           />
         </div>
 
         <div className="group block relative overflow-hidden rounded-lg">
-          <img
+          <Image
             className="w-full size-80 object-cover bg-gray-100 rounded-lg "
-            src="image2.jpeg"
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image2_qu6iec.jpg"
             alt="Project"
+            width={500}
+            height={500}
           />
         </div>
 
         <div className="group block relative overflow-hidden rounded-lg">
-          <img
+          <Image
             className="w-full size-80 object-cover bg-gray-100 rounded-lg "
-            src="image3.jpeg"
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317250/kid2_chsiey.jpg"
             alt="Project"
+            width={500}
+            height={500}
           />
         </div>
 
         <div className="group block relative overflow-hidden rounded-lg">
-          <img
+          <Image
             className="w-full size-80 object-cover bg-gray-100 rounded-lg "
-            src="image4.jpg"
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image4_bts9wp.jpg"
             alt="Project"
+            width={500}
+            height={500}
           />
         </div>
 
         <div className="group block relative overflow-hidden rounded-lg">
-          <img
+          <Image
             className="w-full size-80 object-cover bg-gray-100 rounded-lg dark:bg-neutral-800"
-            src="image5.jpg"
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image5_lrquyn.jpg"
             alt="Project"
+            width={500}
+            height={500}
           />
         </div>
 
         <div className="group block relative overflow-hidden rounded-lg">
-          <img
+          <Image
             className="w-full size-80 object-cover bg-gray-100 rounded-lg "
-            src="kid5.jpeg"
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317250/kid5_vzbcf0.jpg"
             alt="Project"
+            width={500}
+            height={500}
           />
         </div>
       </div>

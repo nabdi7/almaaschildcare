@@ -9,7 +9,7 @@ const Programs: React.FC = () => {
       <div
         className="absolute inset-0 bg-cover z-0"
         style={{
-          backgroundImage: "url('/program-bg.jpeg')",
+          backgroundImage: "url('https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317250/program-bg_myhmcg.jpg')",
           opacity: 0.8,
         }}
       ></div>

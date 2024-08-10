@@ -1,4 +1,5 @@
 import React from "react";
+import Image from "next/image";
 
 const WhyChoose = () => {
   return (
@@ -20,33 +21,39 @@ const WhyChoose = () => {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div className="flex flex-col items-center">
-            <img
-              src="/image1.jpeg"
+            <Image
+              src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317248/image1_cdgx9e.jpg"
               alt="Passionate and Qualified Educators"
               className="rounded-lg mb-4 w-full h-48 object-cover"
+              width={500}
+              height={500}
             />
             <h3 className="text-lg font-medium">
               Passionate and Qualified Staff
             </h3>
           </div>
           <div className="flex flex-col items-center">
-            <img
-              src="/image2.jpeg"
+            <Image
+              src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image2_qu6iec.jpg"
               alt="Individualized Learning Approaches"
               className="rounded-lg mb-4 w-full h-48 object-cover"
+              width={500}
+              height={500}
             />
             <h3 className="text-lg font-medium">
-              Individualized Learning Approaches
+              Individualized Care Approaches
             </h3>
           </div>
           <div className="flex flex-col items-center">
-            <img
-              src="/image3.jpeg"
+            <Image
+              src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/image3_jw5khk.jpg"
               alt="Social and Emotional Development"
               className="rounded-lg mb-4 w-full h-48 object-cover"
+              width={500}
+              height={500}
             />
             <h3 className="text-lg font-medium">
-              Social and Emotional Development
+              Social and Physical Development
             </h3>
           </div>
         </div>

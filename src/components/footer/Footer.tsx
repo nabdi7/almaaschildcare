@@ -1,5 +1,6 @@
 import React from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 const Footer = () => {
   const footerNavs = [
@@ -13,10 +14,12 @@ const Footer = () => {
     <footer className="pt-10">
       <div className="max-w-screen-xl mx-auto px-4 text-gray-600 md:px-8">
         <div className="space-y-6 sm:max-w-md sm:mx-auto sm:text-center text-center md:text-centerr">
-          <img
-            src="/almaas.png"
+          <Image
+            src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/almaas_mbuths.png"
             className="w-32 mx-auto sm:mx-auto "
             alt="Almaas Logo"
+            width={500}
+            height={500}
           />
           <p>
             <a

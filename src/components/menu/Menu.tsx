@@ -39,7 +39,7 @@ export function Menu() {
         {open ? (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-8 w-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -54,7 +54,7 @@ export function Menu() {
         ) : (
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            className="h-6 w-6"
+            className="h-8 w-8"
             fill="none"
             viewBox="0 0 24 24"
             stroke="currentColor"
@@ -69,7 +69,7 @@ export function Menu() {
         )}
       </button>
       {open && (
-        <div className="absolute left-0 w-full flex flex-col mt-2  bg-white border border-gray-200 rounded-lg shadow-lg z-10">
+        <div className="absolute left-0 w-full flex flex-col mt-2 bg-white border-gray-100 rounded-lg 0 z-10">
           <div className="flex flex-col p-2">
             <Link
               href="/about"
@@ -91,6 +91,13 @@ export function Menu() {
               onClick={toggleMenu}
             >
               Contact
+            </Link>
+            <Link
+              href="/contact"
+              className="text-gray-800 hover:text-primary py-2"
+              onClick={toggleMenu}
+            >
+              Enroll now
             </Link>
           </div>
         </div>

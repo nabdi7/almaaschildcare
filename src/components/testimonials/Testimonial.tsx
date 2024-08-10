@@ -25,10 +25,12 @@ const Testimonial: React.FC = () => {
                   <div className="p-4 bg-gray-100 rounded-b-xl md:px-7 dark:bg-neutral-800">
                     <div className="flex items-center gap-x-3">
                       <div className="shrink-0">
-                        <img
+                        <Image
                           className="size-8 sm:h-[2.875rem] sm:w-[2.875rem] rounded-full"
                           src={testimonial.avatar}
                           alt="Testimonial profile"
+                          width={500}
+                          height={500}
                         />
                       </div>
 

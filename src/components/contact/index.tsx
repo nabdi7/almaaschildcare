@@ -20,7 +20,16 @@ export const contactInfo = [
       </svg>
     ),
     title: "Address",
-    content: "25921 161st CT SE Covington, WA 98042 US",
+    content: (
+      <a
+        href="https://maps.app.goo.gl/VpuvEEwt4wRMAWry7"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="text-gray-500 hover:underline"
+      >
+        25921 161st CT SE Covington, WA 98042 US
+      </a>
+    ),
   },
   {
     icon: (
@@ -40,7 +49,14 @@ export const contactInfo = [
       </svg>
     ),
     title: "Phone Number",
-    content: "(206) 934-9581",
+    content: (
+      <a
+        href="tel:+12069349581"
+        className="text-gray-500 hover:underline"
+      >
+        (206) 934-9581
+      </a>
+    ),
   },
   {
     icon: (
@@ -61,6 +77,13 @@ export const contactInfo = [
       </svg>
     ),
     title: "Email Address",
-    content: "haymuunchildcare22@gmail.com",
+    content: (
+      <a
+        href="mailto:haymuunchildcare22@gmail.com"
+        className="text-gray-500 hover:underline"
+      >
+        haymuunchildcare22@gmail.com
+      </a>
+    ),
   },
 ];

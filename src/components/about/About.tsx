@@ -44,7 +44,7 @@ const About = () => {
           {/* About image */}
           <div className="lg:block lg:max-w-xl lg:mt-0 mt-6 flex  w-full h-96 lg:w-full">
             <Image
-              src="/image1.jpeg"
+              src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317248/image1_cdgx9e.jpg"
               className="object-cover md:w-full md:h-full md:max-w-3xl rounded-lg"
               alt="about-image"
               width={500}

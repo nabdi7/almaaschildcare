@@ -80,7 +80,7 @@ const Contact = () => {
             We&apos;re Here to Help
           </h1>
           <p className="mb-10 font-normal text-lg lg:mb-20 mx-auto max-w-3xl text-gray-500 text-center">
-            Whether it&apos;s a question about our services, a request for a
+            Whether it&apos;s a question about our programs, a request for a
             tour, please get in touch with us.
           </p>
           <div className="grid grid-cols-1 gap-x-12 gap-y-6 lg:grid-cols-2 items-start">

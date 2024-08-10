@@ -1,11 +1,12 @@
 import React from "react";
+import Image from "next/image";
 
 const Hero = () => {
   return (
     <section>
       <div
         className="w-full bg-center bg-cover h-[38rem]"
-        style={{ backgroundImage: "url('/background1.jpg')" }}
+        style={{ backgroundImage: "url('https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317248/background1_v1ey89.jpg')" }}
       >
         <div className="flex items-center justify-center w-full h-full bg-gray-900/45">
           <div className="text-center space-y-4">

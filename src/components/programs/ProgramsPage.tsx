@@ -1,5 +1,6 @@
 import React from "react";
 import Cta from "../cta/Cta";
+import Image from "next/image";
 
 const ProgramsPage = () => {
   return (
@@ -21,10 +22,12 @@ const ProgramsPage = () => {
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="bg-gray-800 text-white rounded-lg p-8 md:w-1/2 flex flex-col justify-center items-center text-center">
-              <img
-                src="/infant.jpg"
-                alt="Child painting"
+              <Image
+                src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317249/infant_wwdhua.jpg"
+                alt="Infant image"
                 className="w-full h-58 object-cover object-center rounded-md"
+                width={500}
+                height={500}
               />
             </div>
             <div className="md:w-1/2 flex flex-col justify-center">
@@ -83,10 +86,12 @@ const ProgramsPage = () => {
             </div>
 
             <div className="bg-gray-800 text-white rounded-lg p-8 md:w-1/2 flex flex-col justify-center items-center text-center order-1 md:order-2">
-              <img
-                src="/preshool.jpg"
-                alt="Child painting"
+              <Image
+                src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317250/preshool_ndfmyo.jpg"
+                alt="preschool image"
                 className="w-full h-58 object-cover object-center rounded-md"
+                width={500}
+                height={500}
               />
             </div>
           </div>
@@ -95,10 +100,12 @@ const ProgramsPage = () => {
         <div className="max-w-[85rem] px-4 py-10 sm:px-6 lg:px-8 lg:py-14 mx-auto">
           <div className="flex flex-col md:flex-row gap-8">
             <div className="bg-gray-800 text-white rounded-lg p-8 md:w-1/2 flex flex-col justify-center items-center text-center">
-              <img
-                src="/school.jpg"
-                alt="Child painting"
+              <Image
+                src="https://res.cloudinary.com/dqwh1u64w/image/upload/v1723317250/school_gutadf.jpg"
+                alt="School-age image"
                 className="w-full h-58 object-cover object-center rounded-md"
+                width={500}
+                height={500}
               />
             </div>
             <div className="md:w-1/2 flex flex-col justify-center">
