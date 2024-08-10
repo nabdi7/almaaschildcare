@@ -1,6 +1,75 @@
-import React from "react";
+"use client";
+import emailjs from "@emailjs/browser";
+import React, { useState, useRef, FormEvent } from "react";
+
+interface ContactFormState {
+  formSubmitted: boolean;
+  contactMessage: string;
+  user_name: string;
+  user_email: string;
+  user_phone: string;
+  message: string;
+}
 
 const Contact = () => {
+  const [
+    {
+      formSubmitted,
+      contactMessage,
+      user_name,
+      user_email,
+      user_phone,
+      message,
+    },
+    setState,
+  ] = useState<ContactFormState>({
+    formSubmitted: false,
+    contactMessage: "",
+    user_name: "",
+    user_email: "",
+    user_phone: "",
+    message: "",
+  });
+
+  const formRef = useRef<HTMLFormElement>(null);
+  console.log("Service ID:", process.env.NEXT_PUBLIC_APP_SERVICE_ID);
+  console.log("Template ID:", process.env.NEXT_PUBLIC_APP_TEMPLATE_ID);
+  console.log("User ID:", process.env.NEXT_PUBLIC_APP_USER_ID);
+  const sendEmail = (e: FormEvent<HTMLFormElement>) => {
+    e.preventDefault();
+
+    emailjs
+      .sendForm(
+        process.env.NEXT_PUBLIC_APP_SERVICE_ID ?? "",
+        process.env.NEXT_PUBLIC_APP_TEMPLATE_ID ?? "",
+        formRef.current!,
+        process.env.NEXT_PUBLIC_APP_USER_ID ?? ""
+      )
+      .then(
+        (result) => {
+          console.log("Email sent successfully:", result);
+          setState((prevState) => ({
+            ...prevState,
+            formSubmitted: true,
+            contactMessage: "We got your message. Thanks!",
+          }));
+          setTimeout(() => {
+            setState((prevState) => ({
+              ...prevState,
+              contactMessage: "",
+              user_name: "",
+              user_phone: "",
+              user_email: "",
+              message: "",
+              formSubmitted: false,
+            }));
+          }, 1000);
+        },
+        (error) => {
+          console.error("Email sending failed:", error);
+        }
+      );
+  };
   return (
     <>
       <div
@@ -164,7 +233,11 @@ const Contact = () => {
                 </div>
               </div>
             </div>
-            <form action="#" className="flex flex-col gap-4 lg:max-w-lg ">
+            <form
+              ref={formRef}
+              onSubmit={sendEmail}
+              className="flex flex-col gap-4 lg:max-w-lg "
+            >
               <div className="">
                 <div>
                   <p className="mb-2 text-left font-medium text-gray-900">
@@ -173,7 +246,15 @@ const Contact = () => {
                   <input
                     type="text"
                     placeholder="Name"
-                    name="first-name"
+                    name="user_name"
+                    value={user_name}
+                    onChange={(e) =>
+                      setState((prevState) => ({
+                        ...prevState,
+                        user_name: e.target.value,
+                      }))
+                    }
+                    required
                     className="w-full border border-gray-300 p-2 rounded focus:border-gray-900"
                   />
                 </div>
@@ -185,7 +266,15 @@ const Contact = () => {
                 <input
                   type="tel"
                   placeholder="Phone"
-                  name="phone"
+                  name="user_phone"
+                  value={user_phone}
+                  onChange={(e) =>
+                    setState((prevState) => ({
+                      ...prevState,
+                      user_phone: e.target.value,
+                    }))
+                  }
+                  required
                   className="w-full border border-gray-300 p-2 rounded focus:border-gray-900"
                 />
               </div>
@@ -195,8 +284,16 @@ const Contact = () => {
                 </p>
                 <input
                   type="email"
-                  placeholder="email"
-                  name="email"
+                  placeholder="Email"
+                  name="user_email"
+                  value={user_email}
+                  onChange={(e) =>
+                    setState((prevState) => ({
+                      ...prevState,
+                      user_email: e.target.value,
+                    }))
+                  }
+                  required
                   className="w-full border border-gray-300 p-2 rounded focus:border-gray-900"
                 />
               </div>
@@ -205,12 +302,20 @@ const Contact = () => {
                   Message
                 </p>
                 <textarea
-                  rows={6}
-                  placeholder="Message"
                   name="message"
+                  placeholder="Message"
+                  value={message}
+                  onChange={(e) =>
+                    setState((prevState) => ({
+                      ...prevState,
+                      message: e.target.value,
+                    }))
+                  }
+                  required
                   className="w-full border border-gray-300 p-2 rounded focus:border-gray-900"
                 />
               </div>
+              {formSubmitted}
               <button
                 type="submit"
                 className="w-full py-2 bg-gray-700 text-white rounded hover:bg-gray-800"

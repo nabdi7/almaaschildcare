@@ -26,7 +26,7 @@ const WhyChoose = () => {
               className="rounded-lg mb-4 w-full h-48 object-cover"
             />
             <h3 className="text-lg font-medium">
-              Passionate and Qualified Educators
+              Passionate and Qualified Staff
             </h3>
           </div>
           <div className="flex flex-col items-center">

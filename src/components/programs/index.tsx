@@ -17,7 +17,7 @@ export const programs: Program[] = [
     image: "school.jpg",
     ageRange: "5 to 12 years",
     title: "School Age",
-    description: "Our school-age program offers a stimulating environment for children aged 5 to 12 years, combining education and recreation to support their ongoing development.",
+    description: "Our school-age program offers a stimulating environment for children aged 5 to 12 years, combining caregiving and recreation to support their ongoing development.",
   },
   {
     image: "image1.jpeg",
