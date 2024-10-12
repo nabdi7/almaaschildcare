@@ -58,7 +58,7 @@ const Footer = () => {
           <p>
             Made by{" "}
             <a
-              href="https://qualitydesigns.site"
+              href="https://qdwebdesigns.com"
               target="_blank"
               rel="noopener noreferrer"
               className="text-blue-500 hover:underline"
